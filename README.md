@@ -178,3 +178,17 @@ The following class configures the system by creating a GreenhouseControls objec
 arrays.fill()
 arrays.toString()
 arrays.toDeepString()
+
+$ echo "# Java" >> README.md
+$ git init
+ Initialized empty Git repository in D:/ideaworkspace/untitled/src/.git/
+
+$ git add README.md
+$  git config --global user.email "806030341@qq.com"
+$  git commit -m "first commit"
+[master (root-commit) c5cb7f7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+$ git branch -M main
+$ git remote add origin https://github.com/chenxuguo/Java.git
+$ git push -u origin main
