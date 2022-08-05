@@ -173,7 +173,21 @@ The benefit of this will become more evident in the Graphical User Interfaces ch
 Note that so far in this design you know nothing about exactly what an Event does. And this is the crux of the design—how it "separates the things that change from the things that stay the same."
 The following class configures the system by creating a GreenhouseControls object and adding various kinds of Event objects. This is an example of the Command design pattern
 
+arrays
 
+concurrency
+By serializing tasks, you can eliminate the need to serialize the objects.
+TaskWithResult
+
+Instead of allowing each thread to process whichever job is at the head of the
+queue, the master thread controls job assignment
+by placing the ID of the thread that
+should process the job in each job structure.
+
+On processor architectures in
+which the modification takes more than one memory cycle,
+this can happen when the
+memory read is interleaved between the memory write cycles.
 
 arrays.fill()
 arrays.toString()

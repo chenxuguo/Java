@@ -5,5 +5,8 @@ public class Main {
         SmsService smsService = new SmsServiceImpl();
         SmsProxy smsProxy = new SmsProxy(smsService);
         smsProxy.send("java");
+        // proxy and proxied
+        SmsService proxy = (SmsService)JdkProxyFactory.getProxy(smsService);
+        proxy.send("python");
     }
 }
