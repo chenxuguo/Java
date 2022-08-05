@@ -184,7 +184,7 @@ $ git init
  Initialized empty Git repository in D:/ideaworkspace/untitled/src/.git/
 
 $ git add README.md
-$  git config --global user.email "806030341@qq.com"
+$  git config --global user.email ""
 $  git commit -m "first commit"
 [master (root-commit) c5cb7f7] first commit
  1 file changed, 1 insertion(+)
