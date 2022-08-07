@@ -5,7 +5,7 @@ public class LinkedStack<T> {
         T item;
         Node<T> next;
         Node() { item = null; next = null; }
-        Node(T item, Node next ) {
+        Node(T item, Node<T> next ) {
             this.item = item;
             this.next = next;
         }
