@@ -30,7 +30,7 @@ public class Individual implements Comparable<Individual> {
     String argFirst = arg.getClass().getSimpleName();
     int firstCompare = first.compareTo(argFirst);
     if(firstCompare != 0)
-    return firstCompare;
+      return firstCompare;
     if(name != null && arg.name != null) {
       int secondCompare = name.compareTo(arg.name);
       if(secondCompare != 0)
