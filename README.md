@@ -211,3 +211,10 @@ $ git pull
 $ git add
 $ git rm
 $ git restore <file>
+
+after window732bit update win10 64bit .what I should do:
+cd $HOME/src
+git config --global --add safe.directory $HOME/src
+git branch -M main
+ 
+

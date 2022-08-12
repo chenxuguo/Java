@@ -1,7 +1,5 @@
 //: holding/AsListInference.java
 // Array.asList() make its best guess about type.
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.util.*;
 
 class Snow{};

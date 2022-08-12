@@ -1,5 +1,4 @@
 package arrays;
-import sun.font.TrueTypeFont;
 
 import java.util.*;
 
