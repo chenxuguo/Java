@@ -5,7 +5,7 @@ public class UnboundedWildcrads1 {
     static List<?> list2;
     static List<? extends Object> list3;
     static void assign1(List list) {
-        list1 = list1;
+        list1 = list;
         list2 = list;
         list3 = list;    //Warning: unchecked conversions
         // Found: List, Required: Required: List<? extends Object>
@@ -24,7 +24,7 @@ public class UnboundedWildcrads1 {
         assign1(new ArrayList());
         assign2(new ArrayList());
         assign3(new ArrayList());    // warning
-        // Unchencked conversion , Found Arraylist
+        // Unchecked conversion , Found Arraylist
         // Required: List<? extends Object>
         assign1(new ArrayList<String>());
         assign2(new ArrayList<String>());

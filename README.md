@@ -1,8 +1,9 @@
 # Java
 
+## annotations
 Thus, annotations allow you to store extra information about your program in a format that is tested and verified by the compiler.
 
-reusing
+## reusing
 Initializing the base class
 In addition, the call to the base-class constructor must be the first thing you do in the derived-class constructor.
 Delegation
@@ -10,6 +11,7 @@ The final keyword
 Java’s final keyword has slightly different meanings depending on the context, but in general it says “This cannot be changed.”
 that is, the calculation can be performed at compile time, eliminating some run-time overhead.
 
+## Polymorphism
 Polymorphism is the third essential feature of an object-oriented programming language, after data abstraction and inheritance.
 It provides another dimension of separation of interface from implementation, to decouple what from how
 Polymorphism is a feature that cannot be viewed in isolation (like a switch statement can, for example), but instead works only in concert, as part of the larger picture of class relationships.
@@ -25,7 +27,7 @@ A better approach is to choose composition first, especially when it’s not obv
 
 Polymorphism means “different forms.” In object-oriented programming, you have the same interface from the base class, and different forms using that interface:
 
-Intefaces
+## Intefaces
 Although your first impulse will be to create an interface, the abstract class is an important and necessary tool for building classes that have some unimplemented methods. You can’t always use a pure interface.
 
 Only some of the methods will be abstract, since making a class abstract doesn’t force you to make all the methods abstract.
@@ -111,7 +113,7 @@ Interfaces should be something you refactor to when necessary, rather than insta
 Interfaces and factories
 
 
-Inner Classes
+## Inner Classes
  It’s possible to place a class definition within another class definition. This is called an inner class.
 Initially, inner classes may seem odd, and it will take some time to become comfortable using them in your designs. The need for inner classes isn’t always obvious
 
@@ -173,9 +175,38 @@ The benefit of this will become more evident in the Graphical User Interfaces ch
 Note that so far in this design you know nothing about exactly what an Event does. And this is the crux of the design—how it "separates the things that change from the things that stay the same."
 The following class configures the system by creating a GreenhouseControls object and adding various kinds of Event objects. This is an example of the Command design pattern
 
-arrays
+# generics
+[下载jdk8](https://www.pcsoft.com.cn/iopdfbhjl/211411?module=soft&t=website)
+本文中的例子都是jdk1.5版本的，可是已经找不到该版本了。
+```java
+private Class[] types = {Latte.class , Americano.class,}
+private rand = Random(47);
+types[rand.nextInt(types.length)].newInstance();
+``` 
+实现了iterable接口就可以用foreach语句
+```java
+for(int i : new exercise(7))
+    System.out.print(i + " ");
+```
 
-concurrency
+Say you want to write a method that puts Integer objects into a list. 
+To maximize flexibility, you would like the method to work on List<Integer>, 
+List<Number>, and List<Object> — anything that can hold Integer values.
+```java
+public static void addNumbers(List<? super Integer> list) {
+    for (int i = 1; i <= 10; i++) {
+        list.add(i);
+    }
+}
+```
+
+
+# arrays
+arrays.fill()
+arrays.toString()
+arrays.toDeepString()
+
+# concurrency
 By serializing tasks, you can eliminate the need to serialize the objects.
 TaskWithResult
 
@@ -189,10 +220,7 @@ which the modification takes more than one memory cycle,
 this can happen when the
 memory read is interleaved between the memory write cycles.
 
-arrays.fill()
-arrays.toString()
-arrays.toDeepString()
-
+# git 用法
 $ echo "# Java" >> README.md
 $ git init
  Initialized empty Git repository in D:/ideaworkspace/untitled/src/.git/
@@ -216,5 +244,9 @@ after window732bit update win10 64bit .what I should do:
 cd $HOME/src
 git config --global --add safe.directory $HOME/src
 git branch -M main
+
+# Django
+we can see more clearly that in the Post model the associations topic, created by, and updated by became model fields.
+
  
 

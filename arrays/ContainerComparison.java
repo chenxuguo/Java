@@ -19,7 +19,7 @@ public class ContainerComparison {
         for (int i = 0; i < 5; i++)
             sphereList.add(new BerylliumSphere());
         System.out.println(sphereList);
-        System.out.println(sphereList.get(3));
+        System.out.println(sphereList.get(5));
 
         int[] integers = {0, 1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(integers));

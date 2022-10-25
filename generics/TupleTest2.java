@@ -21,6 +21,8 @@ public class TupleTest2 {
         TwoTuple<String, Integer> ttsi = f();
         System.out.println(ttsi);
         System.out.println(f2());
+        TwoTuple<String, Integer>  ttsi2 = f2();
+        System.out.println(ttsi2);
         System.out.println(g());
         System.out.println(h());
         System.out.println(k());

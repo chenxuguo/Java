@@ -1,4 +1,6 @@
-package generics;
+package generics.coffee;
+import generics.Generator;
+
 import java.util.*;
 
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee>{

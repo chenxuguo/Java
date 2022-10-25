@@ -1,4 +1,7 @@
 package generics;
+import generics.coffee.Coffee;
+import generics.coffee.CoffeeGenerator;
+
 import java.util.*;
 
 public class Generators {

@@ -30,7 +30,7 @@ interface Weight { int weight(); }
 // concrete class but multiple interfaces:
 class Solid<T extends Dimension & HasColor & Weight> {
     T item;
-    Solid(T itme) { this.item = item; }
+    Solid(T item) { this.item = item; }
     T getItem() { return item; }
     java.awt.Color color() { return item.getColor(); }
     int getX() { return item.x; }

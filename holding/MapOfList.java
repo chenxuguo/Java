@@ -3,10 +3,11 @@ package holding;
 import typeinfo.pets.*;
 import java.util.*;
 import static net.mindview.util.Print.*;
+import generics.New;
 
 public class MapOfList {
   public static Map<Person, List<? extends Pet>>
-    petPeople = new HashMap<Person, List<? extends Pet>>();
+    petPeople = New.map();
   static {
     petPeople.put(new Person("Dawn"),
       Arrays.asList(new Cymric("Molly"),new Mutt("Spot")));

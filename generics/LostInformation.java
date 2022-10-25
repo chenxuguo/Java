@@ -16,6 +16,9 @@ public class LostInformation {
                 list.getClass().getTypeParameters()
         ));
         System.out.println(Arrays.toString(
+                map.getClass().getTypeParameters()
+        ));
+        System.out.println(Arrays.toString(
                 quark.getClass().getTypeParameters()
         ));
         System.out.println(Arrays.toString(
