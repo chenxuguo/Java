@@ -2,6 +2,31 @@
 
 ## annotations
 Thus, annotations allow you to store extra information about your program in a format that is tested and verified by the compiler.
+### 下载jdk1.5
+[到oracle官网](https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html#license-lightbox)下载需要[账号密码](https://blog.csdn.net/weixin_42585386/article/details/121682932)
+即2028056560@qq.com 密码Oracle1234
+### 安装过程
+[拷贝到 /opt]( https://www.cnblogs.com/milton/archive/2011/11/01/4215028.html),[设置链接javac java jdk](https://www.jianshu.com/p/14aa7b696bc3)
+jdk的路径是/usr/local/jdk
+```shell
+sudo update-alternatives --install /usr/local/jdk jdk /opt/jdk 3000
+```
+### 设置classpath
+```shell
+echo export JAVA_HOME=/usr/local/jdk >> /etc/profile
+echo export PATH=\$PATH:$JAVA_HOME/bin >> /etc/profile
+echo export CLASSPATH=.:\$JAVA_HOME/lib/dt.jar:\$JAVA_HOME/lib/tools.jar >> /etc/profile
+source /etc/profile
+```
+### apt
+[运行apt注解处理](https://www.iteye.com/blog/405153947-2019508)
+```shell
+/opt/jdk1.5.0_22/bin/apt -factory InterfaceExtractorProcessorFactory  -nocompile Multiplier.java
+```
+去掉annotations:
+```java
+    Collections.singleton("annotations.ExtractInterface")
+```
 
 ## reusing
 Initializing the base class
